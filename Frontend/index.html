@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo Manager - Modern & Aesthetic</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="background-decoration">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+</div>
+
+<div class="container">
+
+    <div class="card">
+
+        <div class="header">
+            <div class="header-content">
+                <h1>✨ Task Manager</h1>
+                <p class="subtitle">Stay organized and productive</p>
+            </div>
+        </div>
+
+        <div class="input-section">
+            <input
+                type="text"
+                id="taskInput"
+                placeholder="Add a new task..."
+                autocomplete="off"
+            >
+            <button class="btn-add" onclick="addTodo()">
+                <span class="btn-icon">+</span>
+                <span class="btn-text">Add</span>
+            </button>
+        </div>
+
+        <div class="stats-section">
+            <div class="stat">
+                <span class="stat-label">Total Tasks</span>
+                <span id="todoCount" class="stat-value">0</span>
+            </div>
+        </div>
+
+        <div class="todo-container">
+            <div id="emptyState" class="empty-state">
+                <div class="empty-icon">📭</div>
+                <p>No tasks yet. Add one to get started!</p>
+            </div>
+            <ul id="todoList" class="todo-list"></ul>
+        </div>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
